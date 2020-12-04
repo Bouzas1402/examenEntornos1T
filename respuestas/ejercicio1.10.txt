@@ -1,0 +1,46 @@
+
+C:\Users\daw1_a\examen-APELLIDO1-APELLIDO2 -> origin\respuestas (APELLIDO1-APELLIDO2 -> ori
+gin)
+λ git branch
+* APELLIDO1-APELLIDO2
+  main
+
+C:\Users\daw1_a\examen-APELLIDO1-APELLIDO2 -> origin\respuestas (APELLIDO1-APELLIDO2 -> ori
+gin)
+λ git checkout main
+Deletion of directory 'respuestas' failed. Should I try again? (y/n) n
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\daw1_a\examen-APELLIDO1-APELLIDO2\respuestas (main -> origin)
+λ git merge APELLIDO1-APELLIDO2
+Updating b79c7ba..c357147
+Fast-forward
+ respuestas/ejercicio1.4.txt | 64 +++++++++++++++++++++++++++++++++++++++++++++
+ respuestas/ejercicio1.6.txt | 27 +++++++++++++++++++
+ 2 files changed, 91 insertions(+)
+ create mode 100644 respuestas/ejercicio1.4.txt
+ create mode 100644 respuestas/ejercicio1.6.txt
+
+C:\Users\daw1_a\examen-APELLIDO1-APELLIDO2\respuestas (main -> origin)
+λ git branch
+  APELLIDO1-APELLIDO2
+* main
+
+C:\Users\daw1_a\examen-APELLIDO1-APELLIDO2\respuestas (main -> origin)
+λ touch ejercicio1.10.txt
+
+C:\Users\daw1_a\examen-APELLIDO1-APELLIDO2\respuestas (main -> origin)
+λ git log --graph --oneline --decorate --all
+* c357147 (HEAD -> main, APELLIDO1-APELLIDO2) Añadida respuesta ejercicio 1.6
+* 74fb930 Añadida respuesta ejercicio 1.4
+* b79c7ba (origin/main, origin/HEAD) Update .gitignore
+* 7b39baf Initial commit
+
+
+Al intentar crear el tag me daba error uno de los mensajes que me aparecio fue este
+C:\Users\daw1_a\examen-APELLIDO1-APELLIDO2 -> origin\respuestas (APELLIDO1-APELLIDO2 -> origin)
+λ git tag -a APELLIDO1-APELLIDO2-paso5 74fb930
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+No pude solucionarlo.
